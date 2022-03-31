@@ -20,6 +20,10 @@ app.get("/categories", (_, res) => {
   res.json(categories);
 });
 
+app.get("/", (_, res) => {
+  res.json(index.post);
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
